@@ -59,7 +59,7 @@ const Nav = () => {
                             component="div"
                             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                         >
-                            WEATHERS REPORT
+                            WEATHER REPORT
                         </Typography>
 
                         <Search>
@@ -73,7 +73,9 @@ const Nav = () => {
                                     placeholder="enter country name"
                                     style={{ height: '2rem', margin: '10px' }}
                                 />
-                                <button type='submit' style={{height:'2.4rem', marginTop: '5px' }}>Search</button>
+<!--                                 <button type='submit' style={{height:'2.4rem', marginTop: '5px' }}>Search</button> -->
+                                <button disabled={!input.name} type='submit' style={{height:'2.4rem', marginTop: '5px' }}>Search</button>
+                                
                             </form>
                         </Search>
 
